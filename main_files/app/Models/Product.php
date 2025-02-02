@@ -15,6 +15,19 @@ class Product extends Model
 
     protected $appends = ['total_sale', 'name', 'average_rating', 'total_rating'];
 
+<<<<<<< HEAD
+=======
+    protected $fillable = [
+        'category_id',
+        'author_id',
+        'regular_price',
+        'offer_price',
+        'status',
+        'uses_keys', // Add this
+        // ... any other fillable fields you have
+    ];
+
+>>>>>>> 0aeda949 (Updating backend files in main_files)
     public function category(){
         return $this->belongsTo(Category::class, 'category_id')->with('catlangfrontend');
     }
@@ -31,7 +44,13 @@ class Product extends Model
         return $this->hasMany(Review::class)->select('id', 'product_id', 'status', 'rating')->where('status', 1);
     }
 
+<<<<<<< HEAD
 
+=======
+    public function keys(){
+        return $this->hasMany(Key::class);
+    }
+>>>>>>> 0aeda949 (Updating backend files in main_files)
 
     public function productlangfrontend()
     {
@@ -49,16 +68,23 @@ class Product extends Model
         return $this->belongsTo(ProductLanguage::class, 'id', 'product_id')->where('lang_code', $admin_lang);
     }
 
+<<<<<<< HEAD
 
 
     public function getTotalSaleAttribute()
     {
         return (int) 0;
 
+=======
+    public function getTotalSaleAttribute()
+    {
+        return (int) 0;
+>>>>>>> 0aeda949 (Updating backend files in main_files)
     }
 
     public function getAverageRatingAttribute()
     {
+<<<<<<< HEAD
 
         if($this->reviews->count() > 0){
 
@@ -70,16 +96,31 @@ class Product extends Model
             return (float) sprintf("%.1f", $rating);
         }
 
+=======
+        if($this->reviews->count() > 0){
+            $rating = $this->reviews->avg('rating');
+            return (float) sprintf("%.1f", $rating);
+        }else{
+            $rating = 0.0;
+            return (float) sprintf("%.1f", $rating);
+        }
+>>>>>>> 0aeda949 (Updating backend files in main_files)
     }
 
     public function getTotalRatingAttribute()
     {
+<<<<<<< HEAD
 
         return (int) $this->reviews->count();
 
     }
 
 
+=======
+        return (int) $this->reviews->count();
+    }
+
+>>>>>>> 0aeda949 (Updating backend files in main_files)
     public function getNameAttribute()
     {
         return $this->productlangfrontend?->name;
@@ -89,6 +130,12 @@ class Product extends Model
         'regular_price' => 'float',
         'offer_price' => 'float',
         'average_rating' => 'float',
+<<<<<<< HEAD
     ];
 
 }
+=======
+        'uses_keys' => 'boolean', // Add this
+    ];
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -31,3 +32,38 @@ class CreateMessageDocumentsTable extends Migration
         Schema::dropIfExists('message_documents');
     }
 }
+=======
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateMessageDocumentsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('message_documents', function (Blueprint $table) {
+            $table->id();
+            $table->integer('ticket_message_id');
+            $table->string('file_name');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('message_documents');
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

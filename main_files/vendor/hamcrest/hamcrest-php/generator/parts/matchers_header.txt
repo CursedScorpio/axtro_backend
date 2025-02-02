@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 /**
@@ -5,3 +6,12 @@
  */
 class Matchers
 {
+=======
+
+
+/**
+ * A series of static factories for all hamcrest matchers.
+ */
+class Matchers
+{
+>>>>>>> 0aeda949 (Updating backend files in main_files)

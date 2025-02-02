@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 language: php
 php:
   - "5.6"
@@ -11,3 +12,18 @@ before_script:
 
 script:
   - vendor/bin/phpunit 
+=======
+language: php
+php:
+  - "5.6"
+  - "7.0"
+  - "7.1"
+  - "7.2"
+
+before_script:
+  - composer self-update
+  - composer install --no-interaction
+
+script:
+  - vendor/bin/phpunit 
+>>>>>>> 0aeda949 (Updating backend files in main_files)

@@ -85,7 +85,17 @@
                                         <option value="0">{{__('admin.Inactive')}}</option>
                                     </select>
                                 </div>
+<<<<<<< HEAD
 
+=======
+								<div class="form-group col-12">
+									<label>{{__('admin.Product Type')}}</label>
+									<div>
+										<input type="checkbox" name="uses_keys" id="uses_keys"> 
+										<label for="uses_keys" class="mr-3">{{__('admin.Uses Product Keys')}}</label>
+									</div>
+								</div>
+>>>>>>> 0aeda949 (Updating backend files in main_files)
                                 <div class="form-group col-12">
                                     <label>{{__('admin.Tags')}} ({{__('admin.Press the comma for new tag')}})</label> <br>
                                    <input type="text" class="form-control tags" name="tags" value="{{ old('tags') }}">

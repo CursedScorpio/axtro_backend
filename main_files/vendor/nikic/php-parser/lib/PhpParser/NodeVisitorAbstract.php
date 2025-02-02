@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php declare(strict_types=1);
 
 namespace PhpParser;
@@ -22,3 +23,29 @@ abstract class NodeVisitorAbstract implements NodeVisitor {
         return null;
     }
 }
+=======
+<?php declare(strict_types=1);
+
+namespace PhpParser;
+
+/**
+ * @codeCoverageIgnore
+ */
+abstract class NodeVisitorAbstract implements NodeVisitor {
+    public function beforeTraverse(array $nodes) {
+        return null;
+    }
+
+    public function enterNode(Node $node) {
+        return null;
+    }
+
+    public function leaveNode(Node $node) {
+        return null;
+    }
+
+    public function afterTraverse(array $nodes) {
+        return null;
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

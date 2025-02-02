@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "repositories": [
       {
@@ -10,3 +11,17 @@
         "mercadopago/dx-php": "dev-master"
     }
 }
+=======
+{
+    "repositories": [
+      {
+          "url": "git@github.com:mercadopago/sdk-php.git",
+          "type": "git"
+      }
+    ], 
+    "name": "mercadopago/sdk-php-sample",
+    "require": {
+        "mercadopago/dx-php": "dev-master"
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="4.x-dev@">
   <file src="src/Iterator.php">
@@ -6,3 +7,13 @@
     </UndefinedInterfaceMethod>
   </file>
 </files>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="4.x-dev@">
+  <file src="src/Iterator.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>current</code>
+    </UndefinedInterfaceMethod>
+  </file>
+</files>
+>>>>>>> 0aeda949 (Updating backend files in main_files)

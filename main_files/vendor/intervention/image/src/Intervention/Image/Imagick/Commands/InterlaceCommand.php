@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace Intervention\Image\Imagick\Commands;
@@ -27,3 +28,34 @@ class InterlaceCommand extends AbstractCommand
         return true;
     }
 }
+=======
+<?php
+
+namespace Intervention\Image\Imagick\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class InterlaceCommand extends AbstractCommand
+{
+    /**
+     * Toggles interlaced encoding mode
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $mode = $this->argument(0)->type('bool')->value(true);
+
+        if ($mode) {
+            $mode = \Imagick::INTERLACE_LINE;
+        } else {
+            $mode = \Imagick::INTERLACE_NO;
+        }
+
+        $image->getCore()->setInterlaceScheme($mode);
+
+        return true;
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

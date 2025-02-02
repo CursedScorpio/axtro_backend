@@ -111,6 +111,10 @@ class ProductController extends Controller
         $product->popular_item = $request->popular_item ? 1 : 0;
         $product->trending_item = $request->trending_item ? 1 : 0;
         $product->featured_item = $request->featured_item ? 1 : 0;
+<<<<<<< HEAD
+=======
+		$product->uses_keys = $request->uses_keys ? 1 : 0;
+>>>>>>> 0aeda949 (Updating backend files in main_files)
         $product->save();
 
         $languages = Language::get();
@@ -211,6 +215,10 @@ class ProductController extends Controller
             $product->popular_item = $request->popular_item ? 1 : 0;
             $product->trending_item = $request->trending_item ? 1 : 0;
             $product->featured_item = $request->featured_item ? 1 : 0;
+<<<<<<< HEAD
+=======
+			$product->uses_keys = $request->uses_keys ? 1 : 0;
+>>>>>>> 0aeda949 (Updating backend files in main_files)
             $product->save();
 
         }

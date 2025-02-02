@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace Luigel\Paymongo\Traits;
@@ -49,3 +50,56 @@ trait HasToggleWebhook
         return $this->request();
     }
 }
+=======
+<?php
+
+namespace Luigel\Paymongo\Traits;
+
+use Luigel\Paymongo\Models\BaseModel;
+use Luigel\Paymongo\Models\Webhook;
+
+trait HasToggleWebhook
+{
+    /**
+     * Enables the webhook.
+     *
+     * @param  Webhook  $webhook
+     * @return BaseModel
+     */
+    public function enable(Webhook $webhook)
+    {
+        $this->method = 'POST';
+        $this->apiUrl = $this->apiUrl.$webhook->getId().'/enable';
+
+        $this->setGuzzleOptions([
+            'headers' => [
+                'Accept' => 'application/json',
+            ],
+            'auth' => [config('paymongo.secret_key'), ''],
+        ]);
+
+        return $this->request();
+    }
+
+    /**
+     * Disables the webhook.
+     *
+     * @param  Webhook  $webhook
+     * @return BaseModel
+     */
+    public function disable(Webhook $webhook)
+    {
+        $this->method = 'POST';
+        $this->apiUrl = $this->apiUrl.$webhook->getId().'/disable';
+
+        $this->setGuzzleOptions([
+            'headers' => [
+                'Accept' => 'application/json',
+            ],
+            'auth' => [config('paymongo.secret_key'), ''],
+        ]);
+
+        return $this->request();
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

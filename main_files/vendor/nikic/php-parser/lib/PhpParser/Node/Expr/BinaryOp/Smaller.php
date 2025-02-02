@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php declare(strict_types=1);
 
 namespace PhpParser\Node\Expr\BinaryOp;
@@ -13,3 +14,20 @@ class Smaller extends BinaryOp {
         return 'Expr_BinaryOp_Smaller';
     }
 }
+=======
+<?php declare(strict_types=1);
+
+namespace PhpParser\Node\Expr\BinaryOp;
+
+use PhpParser\Node\Expr\BinaryOp;
+
+class Smaller extends BinaryOp {
+    public function getOperatorSigil(): string {
+        return '<';
+    }
+
+    public function getType(): string {
+        return 'Expr_BinaryOp_Smaller';
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

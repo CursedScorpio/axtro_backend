@@ -2,8 +2,13 @@
 
 ## 10.21.0 - 2023-08-10
 * [#1546](https://github.com/stripe/stripe-php/pull/1546) Update generated code
+<<<<<<< HEAD
   * Add support for new value `payment_reversal` on enum `BalanceTransaction.type`
   * Add support for new value `adjusted_for_overdraft` on enum `CustomerBalanceTransaction.type`
+=======
+  * Add support for new value `payment_reversal` on enum `BalanceTransaction.type`
+  * Add support for new value `adjusted_for_overdraft` on enum `CustomerBalanceTransaction.type`
+>>>>>>> 0aeda949 (Updating backend files in main_files)
 
 ## 10.20.0 - 2023-08-03
 * [#1539](https://github.com/stripe/stripe-php/pull/1539) Update generated code

@@ -41,6 +41,10 @@ return array(
     'App\\Http\\Controllers\\Admin\\PricingPlanController' => $baseDir . '/app/Http/Controllers/Admin/PricingPlanController.php',
     'App\\Http\\Controllers\\Admin\\PrivacyPolicyController' => $baseDir . '/app/Http/Controllers/Admin/PrivacyPolicyController.php',
     'App\\Http\\Controllers\\Admin\\ProductController' => $baseDir . '/app/Http/Controllers/Admin/ProductController.php',
+<<<<<<< HEAD
+=======
+    'App\\Http\\Controllers\\Admin\\ProductKeyController' => $baseDir . '/app/Http/Controllers/Admin/ProductKeyController.php',
+>>>>>>> 0aeda949 (Updating backend files in main_files)
     'App\\Http\\Controllers\\Admin\\ProductReviewController' => $baseDir . '/app/Http/Controllers/Admin/ProductReviewController.php',
     'App\\Http\\Controllers\\Admin\\ProviderController' => $baseDir . '/app/Http/Controllers/Admin/ProviderController.php',
     'App\\Http\\Controllers\\Admin\\ProviderWithdrawController' => $baseDir . '/app/Http/Controllers/Admin/ProviderWithdrawController.php',
@@ -143,6 +147,10 @@ return array(
     'App\\Models\\Homepage' => $baseDir . '/app/Models/Homepage.php',
     'App\\Models\\HomepageLanguage' => $baseDir . '/app/Models/HomepageLanguage.php',
     'App\\Models\\InstamojoPayment' => $baseDir . '/app/Models/InstamojoPayment.php',
+<<<<<<< HEAD
+=======
+    'App\\Models\\Key' => $baseDir . '/app/Models/Key.php',
+>>>>>>> 0aeda949 (Updating backend files in main_files)
     'App\\Models\\Language' => $baseDir . '/app/Models/Language.php',
     'App\\Models\\MaintainanceText' => $baseDir . '/app/Models/MaintainanceText.php',
     'App\\Models\\Message' => $baseDir . '/app/Models/Message.php',
@@ -157,6 +165,10 @@ return array(
     'App\\Models\\PrivacyPolicy' => $baseDir . '/app/Models/PrivacyPolicy.php',
     'App\\Models\\PrivacyPolicyLanguage' => $baseDir . '/app/Models/PrivacyPolicyLanguage.php',
     'App\\Models\\Product' => $baseDir . '/app/Models/Product.php',
+<<<<<<< HEAD
+=======
+    'App\\Models\\ProductKey' => $baseDir . '/app/Models/ProductKey.php',
+>>>>>>> 0aeda949 (Updating backend files in main_files)
     'App\\Models\\ProductLanguage' => $baseDir . '/app/Models/ProductLanguage.php',
     'App\\Models\\ProductVariant' => $baseDir . '/app/Models/ProductVariant.php',
     'App\\Models\\ProviderClientReport' => $baseDir . '/app/Models/ProviderClientReport.php',
@@ -188,6 +200,11 @@ return array(
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\Rules\\Captcha' => $baseDir . '/app/Rules/Captcha.php',
     'App\\Rules\\Recaptcha' => $baseDir . '/app/Rules/Recaptcha.php',
+<<<<<<< HEAD
+=======
+    'App\\Services\\KeyDeliveryService' => $baseDir . '/app/Services/KeyDeliveryService.php',
+    'App\\Services\\KeyDistributionService' => $baseDir . '/app/Services/KeyDistributionService.php',
+>>>>>>> 0aeda949 (Updating backend files in main_files)
     'App\\Traits\\GlobalStatus' => $baseDir . '/app/Traits/GlobalStatus.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Barryvdh\\Debugbar\\Console\\ClearCommand' => $vendorDir . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
@@ -3802,6 +3819,10 @@ return array(
     'Luigel\\Paymongo\\Traits\\HasToggleWebhook' => $vendorDir . '/luigel/laravel-paymongo/src/Traits/HasToggleWebhook.php',
     'Luigel\\Paymongo\\Traits\\HasWebhooksTable' => $vendorDir . '/luigel/laravel-paymongo/src/Traits/HasWebhooksTable.php',
     'Luigel\\Paymongo\\Traits\\Request' => $vendorDir . '/luigel/laravel-paymongo/src/Traits/Request.php',
+<<<<<<< HEAD
+=======
+    'MaheKarim\\PaypalPayment\\PayPalService' => $vendorDir . '/mahekarim/paypal-payment/src/PayPalService.php',
+>>>>>>> 0aeda949 (Updating backend files in main_files)
     'MercadoPago\\AdvancedPayments\\AdvancedPayment' => $vendorDir . '/mercadopago/dx-php/src/MercadoPago/Entities/AdvancedPayments/AdvancedPayment.php',
     'MercadoPago\\AdvancedPayments\\DisbursementRefund' => $vendorDir . '/mercadopago/dx-php/src/MercadoPago/Entities/AdvancedPayments/DisbursementRefund.php',
     'MercadoPago\\AdvancedPayments\\Refund' => $vendorDir . '/mercadopago/dx-php/src/MercadoPago/Entities/AdvancedPayments/Refund.php',

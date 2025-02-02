@@ -111,8 +111,18 @@
                                         <option {{ $product->status == 0 ? 'selected' : '' }} value="0">{{__('admin.Inactive')}}</option>
                                     </select>
                                 </div>
+<<<<<<< HEAD
 
 
+=======
+								<div class="form-group col-12">
+									<label>{{__('admin.Product Type')}}</label>
+									<div>
+										<input {{ $product->uses_keys == 1 ? 'checked' : '' }} type="checkbox" name="uses_keys" id="uses_keys"> 
+										<label for="uses_keys" class="mr-3">{{__('admin.Uses Product Keys')}}</label>
+									</div>
+								</div>
+>>>>>>> 0aeda949 (Updating backend files in main_files)
                                 <div class="form-group col-12">
                                     <label>{{__('admin.Tags')}} ({{__('admin.Press the comma for new tag')}})</label><br>
                                     <input type="text" class="form-control tags" name="tags" value="{{ html_decode($product->tags) }}">

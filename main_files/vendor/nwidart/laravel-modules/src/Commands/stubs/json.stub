@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "$STUDLY_NAME$",
     "alias": "$LOWER_NAME$",
@@ -9,3 +10,16 @@
     ],
     "files": []
 }
+=======
+{
+    "name": "$STUDLY_NAME$",
+    "alias": "$LOWER_NAME$",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "$MODULE_NAMESPACE$\\$STUDLY_NAME$\\$PROVIDER_NAMESPACE$\\$STUDLY_NAME$ServiceProvider"
+    ],
+    "files": []
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

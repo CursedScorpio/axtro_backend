@@ -17,4 +17,14 @@ class ProductVariant extends Model
     {
         return json_decode($this->options);
     }
+<<<<<<< HEAD
 }
+=======
+	public function product()
+{
+    return $this->belongsTo(Product::class, 'product_id');
+}
+}
+
+
+>>>>>>> 0aeda949 (Updating backend files in main_files)

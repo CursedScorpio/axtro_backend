@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "$VENDOR$/$LOWER_NAME$",
     "description": "",
@@ -21,3 +22,28 @@
         }
     }
 }
+=======
+{
+    "name": "$VENDOR$/$LOWER_NAME$",
+    "description": "",
+    "authors": [
+        {
+            "name": "$AUTHOR_NAME$",
+            "email": "$AUTHOR_EMAIL$"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "$MODULE_NAMESPACE$\\$STUDLY_NAME$\\": ""
+        }
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace App\Models;
@@ -19,3 +20,26 @@ class InstamojoPayment extends Model
         return $query->where('status', 1);
     }
 }
+=======
+<?php
+
+namespace App\Models;
+
+use App\Constants\Status;
+use Illuminate\Database\Eloquent\Model;
+
+class InstamojoPayment extends Model
+{
+    protected $hidden = ['api_key', 'auth_token', 'currency_rate', 'account_mode'];
+
+    public function currency()
+    {
+        return $this->belongsTo(MultiCurrency::class, 'currency_id', 'id');
+    }
+
+    public function scopeActive($query)
+    {
+        return $query->where('status', 1);
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

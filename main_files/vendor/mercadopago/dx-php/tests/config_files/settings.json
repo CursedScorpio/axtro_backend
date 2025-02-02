@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 {
   "CLIENT_ID": "CLIENT_ID_JSON",
   "CLIENT_SECRET": "CLIENT_SECRET_JSON",
   "ACCESS_TOKEN": "CLIENT_ACCESS_TOKEN_JSON"
 }
+=======
+{
+  "CLIENT_ID": "CLIENT_ID_JSON",
+  "CLIENT_SECRET": "CLIENT_SECRET_JSON",
+  "ACCESS_TOKEN": "CLIENT_ACCESS_TOKEN_JSON"
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

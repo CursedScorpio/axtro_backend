@@ -1,9 +1,15 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
+<<<<<<< HEAD
         'pretty_version' => 'dev-update-version',
         'version' => 'dev-update-version',
         'reference' => 'a2d1689af01f87fb1d8184166bd3ed56f553771c',
+=======
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => null,
+>>>>>>> 0aeda949 (Updating backend files in main_files)
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -500,9 +506,15 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
+<<<<<<< HEAD
             'pretty_version' => 'dev-update-version',
             'version' => 'dev-update-version',
             'reference' => 'a2d1689af01f87fb1d8184166bd3ed56f553771c',
+=======
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => null,
+>>>>>>> 0aeda949 (Updating backend files in main_files)
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -17,3 +18,24 @@ class AggregateException extends RejectionException
         );
     }
 }
+=======
+<?php
+
+declare(strict_types=1);
+
+namespace GuzzleHttp\Promise;
+
+/**
+ * Exception thrown when too many errors occur in the some() or any() methods.
+ */
+class AggregateException extends RejectionException
+{
+    public function __construct(string $msg, array $reasons)
+    {
+        parent::__construct(
+            $reasons,
+            sprintf('%s; %d rejected promises', $msg, count($reasons))
+        );
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

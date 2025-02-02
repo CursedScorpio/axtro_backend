@@ -8,7 +8,11 @@ use App\Models\Setting;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\Admin\AdController;
+<<<<<<< HEAD
 
+=======
+use App\Http\Controllers\Admin\ProductKeyController;
+>>>>>>> 0aeda949 (Updating backend files in main_files)
 
 use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\BlogController;
@@ -227,6 +231,17 @@ Route::group(['middleware' => ['demo', 'XSS']], function () {
         Route::post('send-forget-password', [AdminForgotPasswordController::class, 'sendForgetEmail'])->name('send.forget.password');
         Route::get('reset-password/{token}', [AdminForgotPasswordController::class, 'resetPassword'])->name('reset.password');
         Route::post('password-store/{token}', [AdminForgotPasswordController::class, 'storeResetData'])->name('store.reset.password');
+<<<<<<< HEAD
+=======
+	// Product key management
+         
+    Route::middleware(['auth:admin'])->group(function () {
+        Route::get('/keys', [App\Http\Controllers\Admin\ProductKeyController::class, 'index'])->name('keys.index');
+        Route::post('/keys', [App\Http\Controllers\Admin\ProductKeyController::class, 'store'])->name('keys.store');
+        Route::delete('/keys/{key}', [App\Http\Controllers\Admin\ProductKeyController::class, 'destroy'])->name('keys.destroy');
+        Route::get('/keys/get-variants/{productId}', [App\Http\Controllers\Admin\ProductKeyController::class, 'getVariants'])->name('keys.get-variants');
+    });    
+>>>>>>> 0aeda949 (Updating backend files in main_files)
         // end auth route
 
         Route::resource('admin', AdminController::class);

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 use Illuminate\Support\Facades\Schema;
@@ -30,3 +31,37 @@ $FIELDS_DOWN$
         });
     }
 };
+=======
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('$TABLE$', function (Blueprint $table) {
+$FIELDS_UP$
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('$TABLE$', function (Blueprint $table) {
+$FIELDS_DOWN$
+        });
+    }
+};
+>>>>>>> 0aeda949 (Updating backend files in main_files)

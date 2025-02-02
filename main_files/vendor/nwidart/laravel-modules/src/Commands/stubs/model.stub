@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace $NAMESPACE$;
@@ -16,3 +17,23 @@ class $CLASS$ extends Model
         return \$MODULE_NAMESPACE$\$MODULE$\Database\factories\$NAME$Factory::new();
     }
 }
+=======
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class $CLASS$ extends Model
+{
+    use HasFactory;
+
+    protected $fillable = $FILLABLE$;
+    
+    protected static function newFactory()
+    {
+        return \$MODULE_NAMESPACE$\$MODULE$\Database\factories\$NAME$Factory::new();
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

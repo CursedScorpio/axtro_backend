@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace Nwidart\Modules\Publishing;
@@ -37,3 +38,44 @@ class LangPublisher extends Publisher
         );
     }
 }
+=======
+<?php
+
+namespace Nwidart\Modules\Publishing;
+
+use Nwidart\Modules\Support\Config\GenerateConfigReader;
+
+class LangPublisher extends Publisher
+{
+    /**
+     * Determine whether the result message will shown in the console.
+     *
+     * @var bool
+     */
+    protected $showMessage = false;
+
+    /**
+     * Get destination path.
+     *
+     * @return string
+     */
+    public function getDestinationPath()
+    {
+        $name = $this->module->getLowerName();
+
+        return base_path("resources/lang/{$name}");
+    }
+
+    /**
+     * Get source path.
+     *
+     * @return string
+     */
+    public function getSourcePath()
+    {
+        return $this->getModule()->getExtraPath(
+            GenerateConfigReader::read('lang')->getPath()
+        );
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

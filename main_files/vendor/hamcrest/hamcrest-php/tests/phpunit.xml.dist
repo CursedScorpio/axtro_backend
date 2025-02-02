@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <phpunit backupGlobals="false"
          backupStaticAttributes="false"
          bootstrap="bootstrap.php"
@@ -19,3 +20,26 @@
     </whitelist>
   </filter>
 </phpunit>
+=======
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="bootstrap.php"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+  <testsuites>
+    <testsuite name="hamcrest-php">
+      <directory suffix="Test.php">.</directory>
+    </testsuite>
+  </testsuites>
+
+  <filter>
+    <whitelist addUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">../hamcrest</directory>
+    </whitelist>
+  </filter>
+</phpunit>
+>>>>>>> 0aeda949 (Updating backend files in main_files)

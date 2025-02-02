@@ -781,6 +781,10 @@ class ComposerStaticInit60a505c0d9b42f5713294cfa73873e61
         'App\\Http\\Controllers\\Admin\\PricingPlanController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PricingPlanController.php',
         'App\\Http\\Controllers\\Admin\\PrivacyPolicyController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PrivacyPolicyController.php',
         'App\\Http\\Controllers\\Admin\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProductController.php',
+<<<<<<< HEAD
+=======
+        'App\\Http\\Controllers\\Admin\\ProductKeyController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProductKeyController.php',
+>>>>>>> 0aeda949 (Updating backend files in main_files)
         'App\\Http\\Controllers\\Admin\\ProductReviewController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProductReviewController.php',
         'App\\Http\\Controllers\\Admin\\ProviderController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProviderController.php',
         'App\\Http\\Controllers\\Admin\\ProviderWithdrawController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProviderWithdrawController.php',
@@ -883,6 +887,10 @@ class ComposerStaticInit60a505c0d9b42f5713294cfa73873e61
         'App\\Models\\Homepage' => __DIR__ . '/../..' . '/app/Models/Homepage.php',
         'App\\Models\\HomepageLanguage' => __DIR__ . '/../..' . '/app/Models/HomepageLanguage.php',
         'App\\Models\\InstamojoPayment' => __DIR__ . '/../..' . '/app/Models/InstamojoPayment.php',
+<<<<<<< HEAD
+=======
+        'App\\Models\\Key' => __DIR__ . '/../..' . '/app/Models/Key.php',
+>>>>>>> 0aeda949 (Updating backend files in main_files)
         'App\\Models\\Language' => __DIR__ . '/../..' . '/app/Models/Language.php',
         'App\\Models\\MaintainanceText' => __DIR__ . '/../..' . '/app/Models/MaintainanceText.php',
         'App\\Models\\Message' => __DIR__ . '/../..' . '/app/Models/Message.php',
@@ -897,6 +905,10 @@ class ComposerStaticInit60a505c0d9b42f5713294cfa73873e61
         'App\\Models\\PrivacyPolicy' => __DIR__ . '/../..' . '/app/Models/PrivacyPolicy.php',
         'App\\Models\\PrivacyPolicyLanguage' => __DIR__ . '/../..' . '/app/Models/PrivacyPolicyLanguage.php',
         'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
+<<<<<<< HEAD
+=======
+        'App\\Models\\ProductKey' => __DIR__ . '/../..' . '/app/Models/ProductKey.php',
+>>>>>>> 0aeda949 (Updating backend files in main_files)
         'App\\Models\\ProductLanguage' => __DIR__ . '/../..' . '/app/Models/ProductLanguage.php',
         'App\\Models\\ProductVariant' => __DIR__ . '/../..' . '/app/Models/ProductVariant.php',
         'App\\Models\\ProviderClientReport' => __DIR__ . '/../..' . '/app/Models/ProviderClientReport.php',
@@ -928,6 +940,11 @@ class ComposerStaticInit60a505c0d9b42f5713294cfa73873e61
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Rules\\Captcha' => __DIR__ . '/../..' . '/app/Rules/Captcha.php',
         'App\\Rules\\Recaptcha' => __DIR__ . '/../..' . '/app/Rules/Recaptcha.php',
+<<<<<<< HEAD
+=======
+        'App\\Services\\KeyDeliveryService' => __DIR__ . '/../..' . '/app/Services/KeyDeliveryService.php',
+        'App\\Services\\KeyDistributionService' => __DIR__ . '/../..' . '/app/Services/KeyDistributionService.php',
+>>>>>>> 0aeda949 (Updating backend files in main_files)
         'App\\Traits\\GlobalStatus' => __DIR__ . '/../..' . '/app/Traits/GlobalStatus.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Barryvdh\\Debugbar\\Console\\ClearCommand' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
@@ -4542,6 +4559,10 @@ class ComposerStaticInit60a505c0d9b42f5713294cfa73873e61
         'Luigel\\Paymongo\\Traits\\HasToggleWebhook' => __DIR__ . '/..' . '/luigel/laravel-paymongo/src/Traits/HasToggleWebhook.php',
         'Luigel\\Paymongo\\Traits\\HasWebhooksTable' => __DIR__ . '/..' . '/luigel/laravel-paymongo/src/Traits/HasWebhooksTable.php',
         'Luigel\\Paymongo\\Traits\\Request' => __DIR__ . '/..' . '/luigel/laravel-paymongo/src/Traits/Request.php',
+<<<<<<< HEAD
+=======
+        'MaheKarim\\PaypalPayment\\PayPalService' => __DIR__ . '/..' . '/mahekarim/paypal-payment/src/PayPalService.php',
+>>>>>>> 0aeda949 (Updating backend files in main_files)
         'MercadoPago\\AdvancedPayments\\AdvancedPayment' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/AdvancedPayments/AdvancedPayment.php',
         'MercadoPago\\AdvancedPayments\\DisbursementRefund' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/AdvancedPayments/DisbursementRefund.php',
         'MercadoPago\\AdvancedPayments\\Refund' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/AdvancedPayments/Refund.php',

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace $NAMESPACE$;
@@ -18,3 +19,25 @@ class $CLASS$ extends TestCase
         $this->assertTrue(true);
     }
 }
+=======
+<?php
+
+namespace $NAMESPACE$;
+
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+class $CLASS$ extends TestCase
+{
+    /**
+     * A basic unit test example.
+     *
+     * @return void
+     */
+    public function testExample()
+    {
+        $this->assertTrue(true);
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace Laravel\Socialite\Facades;
@@ -27,3 +28,34 @@ class Socialite extends Facade
         return Factory::class;
     }
 }
+=======
+<?php
+
+namespace Laravel\Socialite\Facades;
+
+use Illuminate\Support\Facades\Facade;
+use Laravel\Socialite\Contracts\Factory;
+
+/**
+ * @method static \Laravel\Socialite\Contracts\Provider driver(string $driver = null)
+ * @method static \Laravel\Socialite\Two\AbstractProvider buildProvider($provider, $config)
+ * @method array getScopes()
+ * @method \Laravel\Socialite\Contracts\Provider scopes(array|string $scopes)
+ * @method \Laravel\Socialite\Contracts\Provider setScopes(array|string $scopes)
+ * @method \Laravel\Socialite\Contracts\Provider redirectUrl(string $url)
+ *
+ * @see \Laravel\Socialite\SocialiteManager
+ */
+class Socialite extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return Factory::class;
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "SupportTicket",
     "alias": "supportticket",
@@ -9,3 +10,16 @@
     ],
     "files": []
 }
+=======
+{
+    "name": "SupportTicket",
+    "alias": "supportticket",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SupportTicket\\Providers\\SupportTicketServiceProvider"
+    ],
+    "files": []
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

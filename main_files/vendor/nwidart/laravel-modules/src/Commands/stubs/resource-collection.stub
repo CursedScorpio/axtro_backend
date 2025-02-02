@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace $NAMESPACE$;
@@ -17,3 +18,24 @@ class $CLASS$ extends ResourceCollection
         return parent::toArray($request);
     }
 }
+=======
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Http\Resources\Json\ResourceCollection;
+
+class $CLASS$ extends ResourceCollection
+{
+    /**
+     * Transform the resource collection into an array.
+     *
+     * @param  \Illuminate\Http\Request
+     * @return array
+     */
+    public function toArray($request)
+    {
+        return parent::toArray($request);
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

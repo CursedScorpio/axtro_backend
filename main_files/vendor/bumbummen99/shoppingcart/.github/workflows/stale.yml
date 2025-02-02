@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: "Stale Bot"
 on:
   schedule:
@@ -15,4 +16,23 @@ jobs:
         days-before-stale: 30
         days-before-close: 7
         stale-issue-label: 'stale'
+=======
+name: "Stale Bot"
+on:
+  schedule:
+  - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'This issue is stale because it has been open 30 days with no activity. Remove stale label or comment or this will be closed in 7 days'
+        days-before-stale: 30
+        days-before-close: 7
+        stale-issue-label: 'stale'
+>>>>>>> 0aeda949 (Updating backend files in main_files)
         exempt-issue-labels: 'good first issue,help wanted,enhancement,Hacktoberfest'

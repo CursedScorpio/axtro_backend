@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace $NAMESPACE$;
@@ -20,3 +21,27 @@ class $CLASS$ extends TestCase
         $response->assertStatus(200);
     }
 }
+=======
+<?php
+
+namespace $NAMESPACE$;
+
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+class $CLASS$ extends TestCase
+{
+    /**
+     * A basic feature test example.
+     *
+     * @return void
+     */
+    public function testExample()
+    {
+        $response = $this->get('/');
+
+        $response->assertStatus(200);
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

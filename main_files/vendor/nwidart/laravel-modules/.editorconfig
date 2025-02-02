@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ; This file is for unithyng the coding style for different editors and IDEs.
 
 root = true;
@@ -11,4 +12,19 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 [*.md]
+=======
+; This file is for unithyng the coding style for different editors and IDEs.
+
+root = true;
+
+[*]
+charset = utf_8
+indent_size = 4
+indent_style = space
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+>>>>>>> 0aeda949 (Updating backend files in main_files)
 trim_trailing_whitespace = false

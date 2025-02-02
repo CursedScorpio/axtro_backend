@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace Intervention\Image\Gd\Commands;
@@ -19,3 +20,26 @@ class ContrastCommand extends AbstractCommand
         return imagefilter($image->getCore(), IMG_FILTER_CONTRAST, ($level * -1));
     }
 }
+=======
+<?php
+
+namespace Intervention\Image\Gd\Commands;
+
+use Intervention\Image\Commands\AbstractCommand;
+
+class ContrastCommand extends AbstractCommand
+{
+    /**
+     * Changes contrast of image
+     *
+     * @param  \Intervention\Image\Image $image
+     * @return boolean
+     */
+    public function execute($image)
+    {
+        $level = $this->argument(0)->between(-100, 100)->required()->value();
+
+        return imagefilter($image->getCore(), IMG_FILTER_CONTRAST, ($level * -1));
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

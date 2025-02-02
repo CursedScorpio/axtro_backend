@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "symfony/process",
     "type": "library",
@@ -26,3 +27,33 @@
     },
     "minimum-stability": "dev"
 }
+=======
+{
+    "name": "symfony/process",
+    "type": "library",
+    "description": "Executes commands in sub-processes",
+    "keywords": [],
+    "homepage": "https://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@symfony.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Component\\Process\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

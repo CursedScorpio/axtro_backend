@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace $NAMESPACE$;
@@ -18,3 +19,25 @@ class $CLASS$
         //
     }
 }
+=======
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Auth\Access\HandlesAuthorization;
+
+class $CLASS$
+{
+    use HandlesAuthorization;
+
+    /**
+     * Create a new policy instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+}
+>>>>>>> 0aeda949 (Updating backend files in main_files)

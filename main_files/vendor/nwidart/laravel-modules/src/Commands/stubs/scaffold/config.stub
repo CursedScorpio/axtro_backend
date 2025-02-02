@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 <?php
 
 return [
     'name' => '$STUDLY_NAME$'
 ];
+=======
+<?php
+
+return [
+    'name' => '$STUDLY_NAME$'
+];
+>>>>>>> 0aeda949 (Updating backend files in main_files)
